@@ -35,5 +35,4 @@ const SetFlex = styled.div`
 	align-self: ${props => props.self || undefined};
 	flex-wrap: ${props => props.wrap || undefined};
 	flex-flow: ${props => props.flow || undefined};
-	height: 100%;
 `;

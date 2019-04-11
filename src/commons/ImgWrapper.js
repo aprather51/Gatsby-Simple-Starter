@@ -10,11 +10,13 @@ const ImgWrapper = ({ children, margin, maxWidth, padding }) => (
 export default ImgWrapper;
 
 const SetImgWrapper = styled.div`
-	display: block;
 	max-width: ${props => props.maxWidth || undefined};
 	padding: ${props => props.padding || undefined};
 	margin: ${props => props.margin || undefined};
-	.gatsby-image-wrapper {
-		width: ${props => props.maxWidth};
-	}
+	width: 100%;
+	/*
+	img {
+		height: auto !important;
+		width: 100%;
+	} */
 `;

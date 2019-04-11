@@ -16,7 +16,7 @@ const Icon = ({ color, icon, margin, size, hover }) => (
 );
 
 Icon.propTypes = {
-	icon: PropTypes.string.isRequired,
+	icon: PropTypes.string,
 	color: PropTypes.string,
 	margin: PropTypes.string,
 	size: PropTypes.string,
@@ -28,7 +28,7 @@ export default Icon;
 /* Styles */
 const SetSvg = styled.svg`
 	display: flex;
-	justfify-content: center;
+	justify-content: center;
 	align-items: center;
 	width: ${props => props.size || '1rem'};
 	height: ${props => props.size || '1rem'};
@@ -36,6 +36,6 @@ const SetSvg = styled.svg`
 	fill: ${props => props.color || '#111'};
 	transition: fill 0.2s ease-in-out;
 	:hover {
-		fill: ${props => (props.hover ? lighten(1, props.color) : props.color)};
+		fill: ${props => (props.hover ? lighten(0.2, props.color) : props.color)};
 	}
 `;
